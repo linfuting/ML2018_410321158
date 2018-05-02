@@ -1,3 +1,11 @@
 from PIL import Image
-im = Image.open("I.png")
-print(im.format, im.size, im.mode)
+import numpy as np
+import matplotlib.pyplot as plt
+im=np.array(Image.open("I.png"))
+#h,w=im.size
+MaxIterLimit=100
+Epoch=1
+
+plt.imshow(im)
+plt.axis('off')
+plt.show()
